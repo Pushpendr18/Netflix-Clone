@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("assets/img/frontPage.jpg");
+    background-position: center center;
+    background-size: max(1000px, 100vw);
+    background-repeat: no-repeat;
+    height: 70vh;
+    position: relative;
+
+}
+
+.main .box {
+    height: 70vh;
+    width: 100%;
+    opacity: 0.69;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+
+nav {
+    max-width: 60vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+nav img {
+    color: red;
+    width: 130px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    font-family: 'Martel Sans', sans-serif;
+    height: calc(100% - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 23px;
+    padding: 0 30px;
+
+}
+
+.hero> :nth-child(1) {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 48px;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 48px;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-family: 'Martel Sans', sans-serif;
+
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.hero> :nth-child(4) {
+    font-family: 'Martel Sans', sans-serif;
+
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+}
+
+.separation {
+    height: 7px;
+    background-color: rgb(47, 46, 46);
+    position: relative;
+    z-index: 20;
+}
+
+.btn {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 3px 8px;
+    font-weight: 400;
+    color: white;
+    background-color: rgba(248, 243, 243, 0.021);
+    border-radius: 4px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.btn-red {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(215, 12, 12);
+    color: white;
+    padding: 2px 24px;
+    font-size: 25px;
+    height: 57px;
+    border: 1px solid rgb(215, 12, 12);
+    border-radius: 4px;
+    font-weight: 400;
+}
+
+.btn-red-sm {
+    font-family: 'Martel Sans', sans-serif;
+    background-color: red;
+    color: white;
+
+}
+
+.hero-buttons {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.main input {
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    z-index: 10;
+    color: white;
+    padding: 7px 101px 8px 14px;
+    font-weight: 900;
+    font-size: 21px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgb(90, 88, 88);
+}
+@media screen and (max-width: 1300px) {
+
+    nav{
+        max-width: 90vw;
+    }
+    .First{
+        flex-wrap: wrap;
+    }
+    .hero> :nth-child(1) {   
+        font-size: 32px;
+    }
+    .hero> :nth-child(2) {   
+        font-size: 18px;
+    }
+    .hero> :nth-child(3) {   
+        font-size: 8px;
+    }
+    .hero-buttons {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+    .other-buttons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+    footer{
+        max-width: 90vw;
+    }
+    .footer-item{
+        align-items: center;
+    }
+}
+@media screen and(max-width: 1300px) {
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+    
+}
+.First {
+    margin: 9px;
+    padding: 20px;
+    background-color: #000;
+    color: white;
+}
+
+.First h2 {
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    margin-left: 2%;
+}
+
+.Second {
+    margin: 4px;
+    display: flex;
+    overflow-x: auto;
+    gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.third:hover {
+    transform: translateY(-5px);
+}
+
+.third {
+    margin: 4px;
+    position: relative;
+    width: 150px;
+    flex-shrink: 2;
+    cursor: pointer;
+}
+
+.Second img {
+    width: 110%;
+    border-radius: 11px;
+
+}
+
+.rank {
+    position: absolute;
+    bottom: -3px;
+    left: -15%;
+    font-size: 90px;
+    -webkit-text-stroke: 1px white;
+    color: #000;
+    font-family: 'Arial Black', Impact, sans-serif;
+    z-index: 2;
+    /* line-height: -6; */
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.Sec1 {
+    /* background-color: #081023; */
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.Sec1 h2 {
+    font-size: 25px;
+    margin-bottom: 18px;
+    color: white;
+    margin-left: -875px;
+    font-family: sans-serif;
+
+
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: linear-gradient(to bottom, #202648, #341930);
+
+    /* background-color: #372070; */
+    padding: 20px;
+    width: 225px;
+    height: 280px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* box-sizing: border-box; */
+    transition: transform 0.3 ease;
+}
+
+.card h3 {
+    margin-top: 16px;
+    text-align: left;
+    font-size: 22px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.card p {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #ddd;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.faq {
+    background-color: black;
+    color: white;
+}
+
+.faq h2 {
+    font-size: 24px;
+    margin-left: 170px;
+    margin-bottom: -20px;
+    font-family: sans-serif;
+}
+
+.faqboX:hover {
+    background-color: #414141;
+    
+}
+.faqboX svg{
+    filter: invert(1);
+}
+.faqboX {
+    transition: all 1s ease-out;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    padding: 24px;
+    max-width: 70vw;
+    margin: 34px auto;
+    cursor: pointer;
+}
+footer{
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 14px;
+}
+footer .Question{
+    padding: 34px 0;
+    /* margin: 5px 32px; */
+     margin-left: -85px; 
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    gap: 25px;
+    /* text-align: center; */
+    /* margin: auto;  */
+    
+    
+}
+.footer a{
+    color: white;
+    font-size: 14px;
+}
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+.other{
+    background-color: #000;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+
+}
+.fonts {
+    margin-bottom: 20px;
+}
+.other-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+.other input {
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    z-index: 10;
+    color: white;
+    padding: 7px 101px 8px 14px;
+    font-weight: 900;
+    font-size: 21px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgb(90, 88, 88);
+}
